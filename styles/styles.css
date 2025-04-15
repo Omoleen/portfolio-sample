@@ -1,0 +1,1666 @@
+/* GENERAL RESETS AND FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist', 'Inter', sans-serif;
+    color: #1A1A1A;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* UTILITY CLASSES */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER / NAVBAR */
+.site-header {
+    padding: 60px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+    color: #9E9E9E;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+    color: #9E9E9E;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding: 0;
+    margin-top: 150px;
+}
+
+.hero-section .container {
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+    /* width: 389px; */
+    width: 100%;
+    /* height: 100px; */
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 11.43px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+    margin-bottom: 42px;
+}
+
+.hero-content h1 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 129%;
+    color: #1A1A1A;
+    width: 263px;
+}
+
+.hero-content h2 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.0025em;
+    color: #BCBCBC;
+    /* width: 263px; */
+    width: 100%;
+}
+
+.hero-description {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.005em;
+    color: #1A1A1A;
+    /* width: 945px; */
+    width: 100%;
+}
+
+.hero-interests {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.0025em;
+    color: #BCBCBC;
+    /* width: 945px; */
+    width: 100%;
+}
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    gap: 4px;
+    width: auto;
+    height: 60px;
+    background: #1A1A1A;
+    border-radius: 9999px;
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.0025em;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+/* PROJECTS SECTION */
+.projects-section {
+    margin-top: 106px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 39px;
+    /* width: 945px; */
+    width: 100%;
+    /* height: 486px; */
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    /* width: 453px; */
+    width: 100%;
+    /* height: 486px; */
+    height: 100%;
+}
+
+.project-image {
+    /* width: 453px; */
+    width: 100%;
+    height: 334px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #F2F2F2;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    /* width: 453px; */
+    width: 100%;
+}
+
+.project-header h2 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.005em;
+    color: #1A1A1A;
+    /* width: 453px; */
+    width: 100%;
+}
+
+.project-interests {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+    color: #BCBCBC;
+    /* width: 393px; */
+    width: 100%;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    margin-top: 112px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.about-content {
+    flex: 1;
+    max-width: calc(100% - 413px - 24px);
+    /* Subtract image width and gap */
+}
+
+.about-content h2 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #9E9E9E;
+    width: 100%;
+}
+
+.about-content p {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 129%;
+    color: #1A1A1A;
+    width: 100%;
+}
+
+.about-image {
+    width: 413px;
+    height: 334px;
+    border-radius: 14px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    margin: 0;
+    flex-shrink: 0;
+    /* Prevent image from shrinking */
+}
+
+.mobile-about-container {
+    display: none;
+}
+
+/* RESUME SECTION */
+.resume-section {
+    margin-top: 229px;
+    padding: 0;
+}
+
+.resume-section h2 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #9E9E9E;
+    margin-bottom: 41px;
+    text-align: left;
+}
+
+.resume-items {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.resume-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 949px; */
+    width: 100%;
+    height: 100px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 393px;
+    height: 100px;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #F2F2F2;
+    overflow: hidden;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 263px;
+    height: 72px;
+}
+
+.resume-content h3 {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 129%;
+    color: #1A1A1A;
+    width: 263px;
+    margin-bottom: 0;
+}
+
+.resume-content .company {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.0025em;
+    color: #9E9E9E;
+    width: 263px;
+    display: block;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    width: 263px;
+    height: 68px;
+}
+
+.job-details .date {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: right;
+    color: #1A1A1A;
+    width: 263px;
+    display: block;
+}
+
+.job-details .location {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: right;
+    letter-spacing: 0.0025em;
+    color: #9E9E9E;
+    width: 263px;
+    display: block;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* FOOTER */
+.site-footer {
+    margin-top: 120px;
+    margin-bottom: 12px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46px;
+}
+
+.footer-divider {
+    /* width: 949px; */
+    width: 100%;
+    height: 0;
+    border: 1px solid #F2F2F2;
+}
+
+.footer-brand {
+    width: 949px;
+    height: 24px;
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+    color: #9E9E9E;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 214px; */
+    /* width: 949px; */
+    width: 100%;
+    height: 60px;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    width: 136px;
+    height: 40px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #F7F7F7;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a:hover {
+    background: #e0e0e0;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    color: #1A1A1A;
+}
+
+.copyright {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.0025em;
+    color: #1A1A1A;
+    opacity: 0.4;
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 4px;
+    /* width: 249px; */
+    width: auto;
+    height: 60px;
+    background: #1A1A1A;
+    border-radius: 9999px;
+    flex-shrink: 0;
+}
+
+.footer-cta a {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.0025em;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+/* Desktop/Tablet Header and Footer */
+.desktop-header,
+.desktop-footer {
+    display: block;
+}
+
+.mobile-header,
+.mobile-footer {
+    display: none;
+}
+
+/* Add mobile header and footer styles */
+@media (max-width: 576px) {
+
+    .desktop-header,
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-header,
+    .mobile-footer {
+        display: block;
+    }
+
+    .mobile-header {
+        margin: 0 auto;
+    }
+
+    .desktop-profile-position {
+        display: none;
+    }
+
+    .mobile-header .navbar {
+        width: 100%;
+        height: 24px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+
+    .mobile-header .logo {
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.0025em;
+        color: #9E9E9E;
+    }
+
+    .mobile-footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 11px;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 11px;
+    }
+
+    .mobile-footer .social-links {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .mobile-footer .social-item {
+        width: 17.65px;
+        height: 17.65px;
+        background: #F7F7F7;
+        border-radius: 17.6471px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-footer .social-item svg {
+        width: 10.59px;
+        height: 10.59px;
+        color: #1A1A1A;
+    }
+
+    body {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .site-header {
+        padding: 16px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 1.5px;
+        background-color: #000000;
+        border-radius: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-section {
+        margin-top: 84px;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+        /* width: 181px; */
+        width: 100%;
+        height: 42px;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 4.57143px;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 2px;
+        /* width: 133px; */
+        /* height: 42px; */
+        text-align: left;
+    }
+
+    .profile-info h1 {
+        /* width: 133px;
+        height: 24px; */
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #1A1A1A;
+        text-align: left;
+    }
+
+    .profile-info h2 {
+        /* width: 133px;
+        height: 16px; */
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+        text-align: left;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 12px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-description {
+        width: 100%;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.0025em;
+        color: #1A1A1A;
+        text-align: left;
+    }
+
+    .hero-interests {
+        width: 100%;
+        height: 42px;
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+        text-align: left;
+    }
+
+    .btn-primary {
+        width: auto;
+        height: 24.46px;
+        padding: 7.22892px 6.4257px;
+        gap: 1.61px;
+        font-size: 7.22892px;
+        line-height: 133%;
+        margin: 16px 0 0 0;
+    }
+
+    .projects-section {
+        margin-top: 60px;
+    }
+
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 44px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 24px;
+        width: 288px;
+        height: 354px;
+        margin-bottom: 0;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 250px;
+        border-radius: 14px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 8px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .project-header h2 {
+        width: 100%;
+        height: 24px;
+        font-size: 18px;
+        line-height: 133%;
+        letter-spacing: 0.0025em;
+    }
+
+    .project-interests {
+        width: 100%;
+        height: 48px;
+        font-size: 12px;
+        line-height: 133%;
+        font-weight: 400;
+    }
+
+    .about-section {
+        margin-top: 60px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 16px;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 16px;
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+
+    .about-content h2 {
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.0025em;
+        color: #9E9E9E;
+        text-align: left;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.0025em;
+        color: #1A1A1A;
+        text-align: left;
+    }
+
+    .about-image {
+        width: 44px;
+        height: 39.6px;
+        border-radius: 1.49153px;
+        margin: 0;
+    }
+
+    .resume-section {
+        margin-top: 60px;
+    }
+
+    .resume-section h2 {
+        height: 16px;
+        font-size: 12px;
+        line-height: 133%;
+        letter-spacing: 0.0025em;
+        color: #9E9E9E;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .resume-items {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+    }
+
+    .resume-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+        gap: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .company-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 12px;
+        width: 100%;
+        height: 36px;
+    }
+
+    .company-logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 1.28px;
+    }
+
+    .resume-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 2px;
+        width: 101px;
+        height: 36px;
+    }
+
+    .resume-content h3 {
+        width: 101px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.0025em;
+    }
+
+    .resume-content .company {
+        width: 101px;
+        height: 14px;
+        font-size: 10px;
+        line-height: 140%;
+        font-weight: 400;
+    }
+
+    .job-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+        gap: 8px;
+        width: 94px;
+        height: 33px;
+    }
+
+    .job-details .date {
+        width: 94px;
+        height: 14px;
+        font-size: 10px;
+        line-height: 140%;
+        text-align: right;
+    }
+
+    .job-details .location {
+        width: 94px;
+        height: 11px;
+        font-size: 8px;
+        line-height: 140%;
+        text-align: right;
+        font-weight: 400;
+    }
+
+    .site-footer {
+        margin-top: 60px;
+    }
+
+    .footer-divider {
+        width: 279px;
+        height: 0;
+        border: 1px solid #F2F2F2;
+    }
+
+    .footer-brand {
+        width: 279px;
+        height: 14px;
+        font-size: 10px;
+        line-height: 140%;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        height: 24.46px;
+    }
+
+    .social-links {
+        width: 60px;
+        height: 17.65px;
+        margin: 0;
+    }
+
+    .social-links a {
+        width: 17.65px;
+        height: 17.65px;
+    }
+
+    .copyright {
+        font-size: 6px;
+        line-height: 140%;
+        opacity: 0.4;
+    }
+
+    .footer-cta {
+        width: auto;
+        min-width: 100px;
+        height: 24.46px;
+        padding: 7.22892px 12px;
+        gap: 1.61px;
+        flex-shrink: 0;
+    }
+
+    .footer-cta a {
+        font-size: 7.22892px;
+        line-height: 133%;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-description,
+    .hero-interests {
+        width: 100%;
+    }
+
+    .project-row,
+    .about-container {
+        width: 100%;
+    }
+
+    .project-image,
+    .project {
+        width: 100%;
+    }
+
+    .about-content,
+    .about-image {
+        width: 48%;
+    }
+
+    .resume-item,
+    .footer-divider,
+    .footer-brand,
+    .footer-content {
+        width: 100%;
+    }
+
+    /* PROJECTS SECTION */
+    .projects-section {
+        margin-top: 106px;
+    }
+
+    .project-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 39px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 334px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #F2F2F2;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .project-header h2 {
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.005em;
+        color: #1A1A1A;
+        width: 100%;
+    }
+
+    .project-interests {
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+        width: 100%;
+    }
+}
+
+/* TABLET (768px) */
+@media (max-width: 768px) {
+    body {
+        position: relative;
+        /* width: 768px; */
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /* .site-header {
+        padding: 60px 0;
+    } */
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        /* left: calc(50% - 708px/2); */
+        top: 60px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 52px;
+        margin: 0 auto;
+        width: 252px;
+        height: 24px;
+        position: static;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 26px;
+        /* width: 389px;
+        height: 100px; */
+        left: 30px;
+        top: 184px;
+        margin-top: 64px;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 708px;
+        /* height: 200px; */
+        margin-bottom: 42px;
+    }
+
+    .hero-description {
+        width: 708px;
+        /* height: 128px; */
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        color: #1A1A1A;
+    }
+
+    .hero-interests {
+        width: 708px;
+        height: 48px;
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+    }
+
+    .btn-primary {
+        margin-top: 42px;
+        margin-left: 0;
+    }
+
+    .projects-section {
+        margin-top: 100px;
+    }
+
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 100%;
+        height: 462px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 334px;
+        border-radius: 14px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 100%;
+        height: 104px;
+    }
+
+    .project-header h2 {
+        width: 100%;
+        height: 40px;
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.005em;
+        color: #1A1A1A;
+    }
+
+    .project-interests {
+        width: 100%;
+        height: 48px;
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+    }
+
+    .about-section {
+        margin-top: 60px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        width: 100%;
+        height: 180px;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 180px;
+        border-radius: 6.78px;
+        background-color: #F2F2F2;
+        margin: 0;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 100%;
+        height: 180px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+    }
+
+    .about-content h2 {
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #9E9E9E;
+    }
+
+    .about-content p {
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.0025em;
+        color: #1A1A1A;
+    }
+
+    .resume-section {
+        margin-top: 60px;
+    }
+
+    .resume-section h2 {
+        width: 100%;
+        height: 32px;
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        color: #9E9E9E;
+    }
+
+    .resume-item {
+        width: 100%;
+    }
+
+    .footer-divider,
+    .footer-brand,
+    .footer-content {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    body {
+        position: relative;
+        /* width: 576px; */
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .site-header {
+        padding: 60px 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        /* left: calc(50% - 708px/2); */
+        top: 60px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 52px;
+        margin: 0 auto;
+        width: 252px;
+        height: 24px;
+        position: static;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 26px;
+        width: 389px;
+        height: 100px;
+        left: 30px;
+        top: 184px;
+        margin-top: 64px;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        /* width: 708px; */
+        width: 100%;
+        /* height: 200px; */
+        margin-bottom: 42px;
+    }
+
+    .hero-description {
+        /* width: 708px; */
+        width: 100%;
+        /* height: 128px; */
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        color: #1A1A1A;
+    }
+
+    .hero-interests {
+        /* width: 708px; */
+        width: 100%;
+        /* height: 48px; */
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        /* font-size: 16px; */
+        /* line-height: 150%; */
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+    }
+
+    .btn-primary {
+        margin-top: 42px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .projects-section {
+        margin-top: 100px;
+    }
+
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 100%;
+        /* height: auto; */
+        padding-bottom: 40px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 100%;
+        /* height: 462px; */
+    }
+
+    .project-image {
+        width: 100%;
+        height: 334px;
+        border-radius: 14px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 100%;
+        /* height: 104px; */
+    }
+
+    .project-header h2 {
+        width: 100%;
+        /* height: 40px; */
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.005em;
+        color: #1A1A1A;
+    }
+
+    .project-interests {
+        width: 100%;
+        /* height: 48px; */
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #BCBCBC;
+    }
+
+    .about-section {
+        margin-top: 60px;
+    }
+
+    .about-container {
+        display: none;
+    }
+
+    .mobile-about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 50px;
+        border-radius: 6.78px;
+        background-color: #FFFFFF;
+
+    }
+
+    .about-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .resume-section {
+        margin-top: 60px;
+    }
+
+    .resume-section h2 {
+        width: 100%;
+        height: 32px;
+        font-family: 'Geist', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        color: #9E9E9E;
+    }
+
+    .resume-item {
+        width: 100%;
+    }
+
+    .footer-divider,
+    .footer-brand,
+    .footer-content {
+        width: 100%;
+    }
+}
